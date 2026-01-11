@@ -35,9 +35,11 @@ Predict the median value of owner-occupied homes (in $1000s) based on 13 housing
 ### Software and Tools Requirements
 
 1. [GithubAccount](https://github.com)
-2. [RenderAccount](https://render.com/)
-3. [VSCodeIDE](https://code.visualstudio.com/)
-4. [GitCLI](https://git-scm.com/)
+2. [HerokuAccount](https://www.heroku.com/)
+3. [RenderAccount](https://render.com/)
+4. [VSCodeIDE](https://code.visualstudio.com/)
+5. [GitCLI](https://git-scm.com/)
+
 
 
 ### Create a new environment
@@ -59,6 +61,28 @@ conda create -p venv python==3.13.7 -y
 - HTML/CSS
 
 - Pickle
+
+### CI/CD & GitHub Actions
+
+This project is integrated with GitHub Actions to automate the Continuous Integration (CI) and Continuous Deployment (CD) processes.
+
+- CI Pipeline: Automatically runs tests and checks on every push and pull request to ensure code quality and stability.
+
+- CD Pipeline: Automatically deploys the application to the configured environment whenever changes are merged into the main branch.
+
+### Secrets & Environment Variables:
+
+- Sensitive information like API keys, database credentials, and deployment tokens are securely stored in GitHub Secrets.
+
+- These secrets are referenced in the GitHub Actions workflow to maintain security and avoid exposing sensitive data.
+
+### Workflow Highlights:
+
+- Automated build, test, and deployment steps.
+
+- Notifications or logs for successful and failed runs.
+
+- Supports easy scaling and faster iterations without manual deployment.
 
 ### What I Did (Key Highlights)
 
